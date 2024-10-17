@@ -1,0 +1,55 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: yourname
+      changes:
+        - createTable:
+            tableName: education_program
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: program_title
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: degree
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: pace
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: study_format
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: duration
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: languages
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: tuition_fee
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: program_url
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
